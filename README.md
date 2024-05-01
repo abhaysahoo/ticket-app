@@ -11,12 +11,12 @@ This Ticket App is a basic MERN application without any authentication. User can
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
-- Next.js
-- MongoDB
-- TailwindCSS
-- Express.js
-- Node.js
-- React
+* Next.js
+* MongoDB
+* TailwindCSS
+* Express.js
+* Node.js
+* React
 * Additional NPM packages
     * Fortawesome
 
