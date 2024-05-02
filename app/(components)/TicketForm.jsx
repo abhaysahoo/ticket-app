@@ -40,7 +40,7 @@ const TicketForm = ({ ticket }) => {
     e.preventDefault()
 
     if (EDITMODE) {
-      const res = await fetch(`/api/Tickets/${ticket._id}`, {
+      const res = await fetch(`https://ticket-app-absahoo.vercel.app/api/Tickets/${ticket._id}`, {
         method: "PUT",
         body: JSON.stringify({ formData }),
         "content-type": "application/json",
@@ -50,7 +50,7 @@ const TicketForm = ({ ticket }) => {
         throw new Error("Failed to update Ticket.")
       }
     } else {
-      const res = await fetch("/api/Tickets", {
+      const res = await fetch("https://ticket-app-absahoo.vercel.app/api/Tickets", {
         method: "POST",
         body: JSON.stringify({ formData }),
         "content-type": "application/json",
